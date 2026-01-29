@@ -14,13 +14,21 @@ Complete these **before** starting the assignment:
 | 1 | **Node.js** | Download LTS version from [nodejs.org](https://nodejs.org) | Open Terminal, type `node --version` → should show `v18.x.x` or higher |
 | 2 | **Git** | Download from [git-scm.com](https://git-scm.com) (use default install options) | Type `git --version` → should show version number |
 | 3 | **GitHub** | Create free account at [github.com](https://github.com) | Can log in to github.com |
-| 4 | **Anthropic API Key** | Sign up at [console.anthropic.com](https://console.anthropic.com), get API key | Save your key somewhere safe |
+| 4 | **Claude Account** | Choose ONE option below (see Cost section) | Can log in to claude.ai |
 | 5 | **Claude Code** | In Terminal: `npm install -g @anthropic-ai/claude-code` | Type `claude --version` → should show version |
 
-### 💰 Cost Information
-- New Anthropic accounts get **$5 free credit**
-- Building one prototype typically costs **$0.50–$2.00**
-- You can monitor usage at console.anthropic.com
+### 💰 Cost Information: Choose Your Option
+
+You need **one** of the following to use Claude Code:
+
+| Option | Cost | Best For | How to Set Up |
+|:-------|:-----|:---------|:--------------|
+| **A. Claude Max** | $20/month | Heavy users, subscription model | Sign up at [claude.ai/upgrade](https://claude.ai) → In Terminal: `claude login` → Sign in via browser |
+| **B. API Credits** | Pay-per-use (~$0.50–2 per prototype) | Light users, one-time project | Sign up at [console.anthropic.com](https://console.anthropic.com) → Get API key → Paste when Claude asks |
+
+**New to Anthropic?** Option B gives you **$5 free credit** — enough to build 2–5 prototypes.
+
+**Already have Claude Pro/Max?** Use Option A — no extra cost beyond your subscription.
 
 ### 🖥️ What is Terminal?
 - **Mac**: Search "Terminal" in Spotlight (Cmd+Space), or find it in Applications → Utilities
@@ -55,7 +63,12 @@ cd ~/Desktop/my-mba-app
 claude
 ```
 
-**First time only**: Claude will ask for your Anthropic API key. Paste the key you saved from Step 4 in prerequisites.
+**First time setup** (depends on which option you chose):
+
+| If You Chose | What Happens |
+|:-------------|:-------------|
+| **Option A (Claude Max)** | Run `claude login` first → Browser opens → Sign in → Return to Terminal |
+| **Option B (API Credits)** | Claude asks for API key → Paste your key from console.anthropic.com |
 
 You should see Claude's welcome message. Now you can type requests in plain English.
 
@@ -217,7 +230,8 @@ Make sure:
 | `claude: command not found` | Run `npm install -g @anthropic-ai/claude-code` again |
 | "Port already in use" | Claude will suggest a different port (5174, etc.) |
 | App stopped working | You probably closed Terminal. Run `npm run dev` again |
-| API key error | Check your key at console.anthropic.com, paste it again when Claude asks |
+| API key error | **Option B users**: Check your key at console.anthropic.com, paste again |
+| Login/auth error | **Option A users**: Run `claude login` again, sign in via browser |
 | "Permission denied" | On Mac, try: `sudo npm install -g @anthropic-ai/claude-code` |
 | Can't push to GitHub | Make sure you created the repo and followed Claude's connection steps |
 
