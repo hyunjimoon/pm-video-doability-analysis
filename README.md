@@ -8,86 +8,90 @@ This repository documents the evaluation and improvement of PM tutorial material
 
 ## Quick Start for Charlie
 
-| What You Need | Where to Find It |
-|:--------------|:-----------------|
-| **Tutorial video** | [Google Drive Video](https://docs.google.com/videos/d/1K_QM0viGAfKkscE1kLrkFyJLUD_OqcprlZUuDcX5vds/edit?usp=sharing) |
-| **Tutorial slides** | [Google Slides](https://docs.google.com/presentation/d/1mh7uzy2-RCQKt3H0W_l_ZSr7dRlhF2HcGB73N4IPafU/edit?usp=sharing) |
-| **Recommended instructions** | [`3_improved_instructions/claude_code_v2.md`](3_improved_instructions/claude_code_v2.md) |
-| **Full analysis** | [`2_analysis/doability_comparison.md`](2_analysis/doability_comparison.md) |
-| **All transcripts** | [`1_transcripts/`](1_transcripts/) |
+| Asset | Link |
+|:------|:-----|
+| **Claude Code video** | [Google Drive](https://docs.google.com/videos/d/1K_QM0viGAfKkscE1kLrkFyJLUD_OqcprlZUuDcX5vds/edit?usp=sharing) |
+| **Claude Code slides** | [Google Slides](https://docs.google.com/presentation/d/1mh7uzy2-RCQKt3H0W_l_ZSr7dRlhF2HcGB73N4IPafU/edit?usp=sharing) |
+| **Claude Code instructions** | [`claude_code_v2.md`](3_improved_instructions/claude_code_v2.md) |
+| **Lovable/Cursor video** | [Descript](https://share.descript.com/view/h6rLcdP97IR) |
+| **Full analysis** | [`doability_comparison.md`](2_analysis/doability_comparison.md) |
 
 ---
 
-## Executive Summary
+## Project Background
 
-### The Problem
-The original 30-minute video tutorial has a **3.3/10 doability score**. 100% of novices fail at `npm install` because Node.js is never mentioned as a prerequisite.
+### Charlie's Original Request
 
-### The Solution
-Created improved Claude Code instructions scoring **9.0/10**, addressing:
-- Missing prerequisites (Node.js, Git, accounts)
-- Terminal basics for non-technical users
-- Two authentication paths (Claude Max vs API credits)
-- Troubleshooting table for common errors
+1. **Watch the video** and read the transcript — assess if a novice can complete the exercise using Lovable, GitHub, and Cursor
+2. **Edit the transcript** to make instructions clearer if there's confusion
+3. **Test the Claude Code version** of the exercise
 
-### Key Insight
-> **A 30-minute video with more information produces worse outcomes than a 10-minute document with less information.**
->
-> For tutorials: **Actionability > Comprehensiveness**
+### Initial Evaluation (ChatGPT Agent)
 
----
+ChatGPT role-playing a novice evaluated three transcript versions:
 
-## Recommendation
+| Version | Score | Notes |
+|:--------|:-----:|:------|
+| Original (30 min) | 7.5/10 | Full video, some confusion points |
+| Charlie's revision | 9/10 | Cleaner structure |
+| Angie's revision | 8/10 | Closer to original for easier editing |
 
-For Spring 2026, we recommend using **Claude Code v2 instructions** + **tutorial slides**:
+**Report**: [ChatGPT Simulation](https://chatgpt.com/share/697acd1a-ac00-8002-929c-26cc22557cbd)
 
-| Approach | Doability | Rationale |
-|:---------|:---------:|:----------|
-| Original video (Lovable+Cursor) | 3.3/10 | Missing prerequisites, confusing workflow |
-| **Claude Code v2 + Slides** | **9.0/10** | Single tool, clear steps, troubleshooting included |
+### Deliverables Created
 
-**Why Claude Code over Lovable+Cursor?**
-- Single tool (Claude Code) vs three tools (Lovable + Cursor + GitHub)
-- Terminal workflow is more transferable to industry
-- Better error messages and AI assistance built-in
+1. **20-minute Lovable/Cursor video** with title pages: [Descript Link](https://share.descript.com/view/h6rLcdP97IR)
+2. **Claude Code alternative** with improved instructions (this repository)
 
 ---
 
-## Charlie's Three Tasks: Results
+## Two Approaches Compared
 
-### Task 1: Evaluate if Novice Can Complete
-**Finding**: Original video = **3.3/10**
+| Aspect | Lovable + Cursor | Claude Code |
+|:-------|:-----------------|:------------|
+| **Tools needed** | 3 (Lovable, Cursor, GitHub) | 2 (Claude Code, GitHub) |
+| **Interface** | Web UI + Desktop app | Terminal/CLI |
+| **Learning curve** | Lower (visual) | Medium (command line) |
+| **Video** | [Descript 20 min](https://share.descript.com/view/h6rLcdP97IR) | [Google Drive 10 min](https://docs.google.com/videos/d/1K_QM0viGAfKkscE1kLrkFyJLUD_OqcprlZUuDcX5vds/edit) |
+| **Instructions** | Video transcript | Written document |
 
-| Criterion | Score | Issue |
-|:----------|:-----:|:------|
-| Prerequisites Clear | 2/10 | Node.js NEVER mentioned |
-| Error Handling | 1/10 | No troubleshooting guidance |
-| No Confusion | 3/10 | Logo fumble, tool mixups |
+### Recommendation
 
-### Task 2: Edit Transcript to Clarify
-| Version | Duration | Score | Change |
-|:--------|:--------:|:-----:|:-------|
-| Original | 30 min | 3.3/10 | — |
-| Charlie's edit | 15 min | 5.2/10 | Added structure, kept mistakes |
-| Angie's edit | 19 min | 4.8/10 | Descript cleanup, still too long |
+**For visual learners**: Use Lovable/Cursor video (20 min)
 
-### Task 3: Test Claude Code Version
-| Version | Score | Key Improvements |
-|:--------|:-----:|:-----------------|
-| Claude Code v1 | 7.7/10 | Prerequisites listed |
-| **Claude Code v2** | **9.0/10** | +Auth options, +Terminal basics, +Troubleshooting |
+**For terminal-comfortable users**: Use Claude Code instructions + video (10 min)
 
 ---
 
-## Doability Scores: All Versions
+## Doability Evaluation (Claude Analysis)
 
-| Version | Format | Duration | Score | Status |
-|:--------|:-------|:--------:|:-----:|:-------|
-| Original | Video | 30 min | 3.3/10 | Not recommended |
-| Charlie | Video | 15 min | 5.2/10 | Missing prerequisites |
-| Angie | Video | 19 min | 4.8/10 | Needs more cuts |
-| Claude Code v1 | Document | ~10 min | 7.7/10 | Workable |
-| **Claude Code v2** | **Document** | **~12 min** | **9.0/10** | **Recommended** |
+Re-evaluated all versions with stricter novice criteria:
+
+| Version | Format | Duration | Claude Score | ChatGPT Score |
+|:--------|:-------|:--------:|:------------:|:-------------:|
+| Original | Video | 30 min | 3.3/10 | 7.5/10 |
+| Charlie's edit | Video | 15 min | 5.2/10 | 9/10 |
+| Angie's edit | Video | 19 min | 4.8/10 | 8/10 |
+| Claude Code v1 | Document | ~10 min | 7.7/10 | — |
+| **Claude Code v2** | **Document** | **~12 min** | **9.0/10** | — |
+
+### Why Score Difference?
+
+Claude evaluation used stricter criteria:
+- **Prerequisites**: Node.js never mentioned in video → blocks 100% of novices at `npm install`
+- **Error handling**: No troubleshooting guidance
+- ChatGPT may have assumed novices would Google solutions
+
+---
+
+## Key Insight
+
+> **A 30-minute video with more information can produce worse outcomes than a 10-minute document with less information.**
+
+**Why?**
+- Missing prerequisites block progress entirely
+- Watching mistakes creates uncertainty
+- For tutorials: **Actionability > Comprehensiveness**
 
 ---
 
@@ -98,20 +102,20 @@ pm-video-doability-analysis/
 │
 ├── README.md                          # This file
 │
-├── 1_transcripts/                     # Task 1 & 2: Video transcripts
-│   ├── original_30min.md              # Original video (3.3/10)
+├── 1_transcripts/                     # Video transcripts
+│   ├── original_30min.md              # Original (3.3/10)
 │   ├── charlie_15min.md               # Charlie's edit (5.2/10)
-│   └── angie_19min.md                 # Angie's Descript edit (4.8/10)
+│   └── angie_19min.md                 # Angie's edit (4.8/10)
 │
 ├── 2_analysis/                        # Evaluation results
 │   ├── doability_comparison.md        # Full scoring comparison
 │   └── novice_walkthrough.md          # 30 flagged improvements
 │
-├── 3_improved_instructions/           # Task 3: Fixed version
+├── 3_improved_instructions/           # Claude Code approach
 │   └── claude_code_v2.md              # Production-ready (9.0/10)
 │
-└── 4_slides/                          # Tutorial slides
-    └── README.md                      # Slide overview + specs
+└── 4_slides/                          # Tutorial materials
+    └── README.md                      # Slides, video, replication guide
 ```
 
 ---
@@ -131,17 +135,19 @@ pm-video-doability-analysis/
 
 ## Next Steps
 
-1. **Test with 2-3 students** before Spring 2026 launch
-2. **Gather feedback** on video clarity and instruction completeness
-3. **Iterate** on troubleshooting section based on real student errors
+1. **Choose approach** for Spring 2026 (Lovable/Cursor vs Claude Code)
+2. **Test with 2-3 students** before launch
+3. **Gather feedback** on clarity and completeness
+4. **Iterate** based on real student errors
 
 ---
 
 ## Contributors
 
-- **Hyunji Moon** — Analysis, Claude Code testing, documentation
+- **Hyunji Moon** — Analysis, video editing, Claude Code testing
 - **Claude Code (Opus 4.5)** — Co-authored improvements and evaluation
+- **ChatGPT** — Initial novice simulation
 
 ---
 
-*Analysis conducted January 2026 for MIT Sloan Product Management course*
+*Analysis conducted January 2026 for MIT Sloan Product Management course (Prof. Charlie Fine)*
