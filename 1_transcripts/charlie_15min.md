@@ -1,8 +1,4 @@
----
-modified:
-  - 2026-01-28T19:30:07-05:00
----
-**Product Management Class: Video Transcript [v2.0 - Suggested]**
+# Product Management Class: Video Transcript [Charlie's Edit]
 
 **🎥 Revised Video Script: "PM Prototyping with Lovable & Cursor"**
 

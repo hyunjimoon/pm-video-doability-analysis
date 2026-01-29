@@ -1,4 +1,4 @@
-# 🧑‍🏫 Product Management Class: Video Transcript [Angie's Shortened Version]
+# Product Management Class: Video Transcript [Angie's Shortened Version]
 
 > **Duration**: ~19 minutes (from Descript edit)
 > **Source**: Edited from Original 30-min video via Descript

@@ -1,8 +1,4 @@
----
-modified:
-  - 2026-01-28T21:47:44-05:00
----
-# 🤜 Doability Score Comparison
+# Doability Score Comparison
 
 > **Evaluator Perspective**: Novice MBA student in MIT Product Management course (Prof. Charlie Fine)
 > **Task**: Follow video instructions to build a working prototype using Lovable, GitHub, and Cursor
@@ -53,7 +49,7 @@ modified:
 
 ## 🎬 Version 2: Charlie's Version (15 minutes)
 
-**Source**: `🧑‍🏫15min_video_charlie.md`
+**Source**: `charlie_15min.md`
 
 ### Scores
 
@@ -81,7 +77,7 @@ modified:
 
 ## 🎬 Version 3: Angie's Descript Edit (19 minutes)
 
-**Source**: `👩‍🏫15min_video_angie.md`
+**Source**: `angie_19min.md`
 
 ### Scores
 
@@ -225,8 +221,8 @@ To create the optimal version from Angie's Descript edit:
 | Version | File | Duration | Score |
 |:--------|:-----|:--------:|:-----:|
 | Original | `30min_video.md` | 30 min | 3.3 |
-| Charlie | `🧑‍🏫15min_video_charlie.md` | 15 min | 5.2 |
-| Angie | `👩‍🏫15min_video_angie.md` | 19 min | 4.8 |
+| Charlie | `charlie_15min.md` | 15 min | 5.2 |
+| Angie | `angie_19min.md` | 19 min | 4.8 |
 
 ---
 
