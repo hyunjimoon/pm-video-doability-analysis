@@ -24,7 +24,7 @@ Analysis and improvement of PM tutorial materials for Prof. Charlie Fine's Produ
 
 **ChatGPT said**: Yes, scores 7.5-9/10
 
-**Claude found**: No — Node.js prerequisite missing → 100% fail at `npm install`
+**Claude found**: No — video says `npm install` but never mentions Node.js must be installed first → 100% of novices get "command not found" error and are stuck
 
 **Solution**: Created Claude Code v2 instructions scoring **9.0/10**
 
@@ -47,11 +47,17 @@ Analysis and improvement of PM tutorial materials for Prof. Charlie Fine's Produ
 
 ### The Critical Blocker
 
+The video assumes students have Node.js installed, but never says so:
+
 ```
-Video says: "npm install"
-Novice sees: "npm: command not found"
-Video never mentioned: Node.js must be installed first
-Result: 100% of true novices blocked
+Step 1: Video says "type npm install"
+Step 2: Novice types "npm install"
+Step 3: Terminal shows "npm: command not found"
+Step 4: Novice is stuck — what is npm? what went wrong?
+
+Root cause: npm comes bundled with Node.js
+            Video never told students to install Node.js first
+            → 100% of true novices blocked at this step
 ```
 
 ---
