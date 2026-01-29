@@ -10,8 +10,9 @@ This repository documents the evaluation and improvement of PM tutorial material
 
 | What You Need | Where to Find It |
 |:--------------|:-----------------|
+| **Tutorial video** | [Google Drive Video](https://docs.google.com/videos/d/1K_QM0viGAfKkscE1kLrkFyJLUD_OqcprlZUuDcX5vds/edit?usp=sharing) |
+| **Tutorial slides** | [Google Slides](https://docs.google.com/presentation/d/1mh7uzy2-RCQKt3H0W_l_ZSr7dRlhF2HcGB73N4IPafU/edit?usp=sharing) |
 | **Recommended instructions** | [`3_improved_instructions/claude_code_v2.md`](3_improved_instructions/claude_code_v2.md) |
-| **Tutorial slides** | [`4_slides/`](4_slides/) |
 | **Full analysis** | [`2_analysis/doability_comparison.md`](2_analysis/doability_comparison.md) |
 | **All transcripts** | [`1_transcripts/`](1_transcripts/) |
 
@@ -130,10 +131,9 @@ pm-video-doability-analysis/
 
 ## Next Steps
 
-1. **Upload tutorial slides** to `4_slides/` folder
-2. **Test with 2-3 students** before Spring 2026 launch
-3. **Add prerequisites title card** to existing Lovable video (if keeping)
-4. **Consider recording** 10-min Claude Code video using the slides
+1. **Test with 2-3 students** before Spring 2026 launch
+2. **Gather feedback** on video clarity and instruction completeness
+3. **Iterate** on troubleshooting section based on real student errors
 
 ---
 
